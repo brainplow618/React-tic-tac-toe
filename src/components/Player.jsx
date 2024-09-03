@@ -21,13 +21,13 @@ export default function Player({
   }
 
   let editAblePlayerName = <span className="player-name">{playerName}</span>;
-  //   let btnCaption = "Edit";
+
 
   if (isEditing) {
     editAblePlayerName = (
       <input type="text" required value={playerName} onChange={handleChange} />
     );
-    // btnCaption = "Save";
+
   }
   return (
     <li className={isActive ? "active" : undefined}>

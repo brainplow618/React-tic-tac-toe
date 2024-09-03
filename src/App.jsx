@@ -23,6 +23,7 @@ function dervieActicePlayer(gameTurns) {
 
   return currentPlayer;
 }
+
 function App() {
   const [players, setPlayers] = useState(PLAYER);
   const [gameTurns, setGameTurns] = useState([]);
@@ -65,9 +66,8 @@ function App() {
     }
     return winner;
   }
+  
   function handleSelectSquaer(rowIndex, colIndex) {
-    // SetActivePlayer((curActivePlayer) => curActivePlayer === 'X' ? 'O' : 'X');
-
     setGameTurns((prevTurns) => {
       const currentPlayer = dervieActicePlayer(gameTurns);
 
